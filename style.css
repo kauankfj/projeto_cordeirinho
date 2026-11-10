@@ -1,0 +1,182 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* cabeçalho */
+
+header{
+    width: 100%;
+    
+    padding: 20px 5%;
+
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: space-between;
+
+    background-color: #252525;
+    
+    color: white;
+}
+
+header img{
+    width: 85px;
+
+    margin-left: -80px;
+}
+
+nav{
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a{
+    color: white;
+
+    text-decoration: none;
+}
+
+/* banner */
+
+.banner{
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #D7C5A5;
+
+    padding: 40px 20px;
+}
+
+.banner h1{
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.banner p{
+    margin-bottom: 25px;
+}
+
+.botao{
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #252525;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+/* cardapio */
+
+.cardapio{
+    padding: 70px 5%;
+
+    background-color: #171717;
+
+    text-align: center;
+}
+
+
+
+.produtos{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+   
+}
+
+.produto{
+    width: 100%;
+}
+
+.produto p{
+    color: white;
+}
+
+.produto h3{
+    color: white;
+
+    font-size: 30px;
+}
+
+.cardapio h2{
+    color: white;
+
+    font-size: 40px;
+
+    padding: 20px;
+}
+
+.produto img{
+    width: 100%;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    border-radius: 10px;
+}
+
+/* sobre*/
+
+.sobre{
+    padding: 80px 5%;
+
+    text-align: center;
+
+    background-color: #E5D8C4;
+}
+
+/* contato */
+
+.contato{
+    padding: 70px 5%;
+
+    text-align: center;
+
+    background-color: #252525;
+
+    color: white;
+}
+
+/* footer */
+
+footer{
+    padding: 70px 5%;
+
+    text-align: center;
+
+    background-color: #171717;
+
+    color: white;
+}
+
