@@ -28,6 +28,9 @@ header{
     background-color: #222222;
     
     color: white;
+
+    background-size: contain;
+
 }
 
 header img{
@@ -50,9 +53,7 @@ nav a{
 
 /* banner */
 
-.carousel_slide{
-    width: 100px;
-}
+
 
 .banner_conteudo h1{
   color: white;
@@ -60,7 +61,7 @@ nav a{
 
 .banner_conteudo p{
 
-    color: #f4b34c;
+    color: #171717;
 }
 
 .banner{
@@ -68,6 +69,8 @@ nav a{
     background-image: url(./img/bannerinicio.jpeg);
 
     width: 100%;
+
+    background-size: cover;
     
     min-height: 500px;
 
@@ -82,6 +85,8 @@ nav a{
     background-color: #D7C5A5;
 
     padding: 40px 20px;
+
+    background-repeat: no-repeat;
 }
 
 .banner h1{
@@ -93,6 +98,93 @@ nav a{
 .banner p{
     margin-bottom: 25px;
 }
+
+.container {
+    width: 550px;
+    max-width: 1000px;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 30px;
+    flex: 0 1 1000px;
+    background-color: #5c3c2773;
+    box-shadow: 0 3px 10px rgba(1, 19, 46, 0.08);
+    height: 450px;
+    margin-left: 200px;
+}
+
+.container h3{
+  margin-left: -400px;
+
+  color: #feffff;
+}
+/* 
+.agendamento a{
+
+    display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   white-space: nowrap;
+   flex-shrink: 0;
+
+   width: auto;
+   min-width: 100px;
+   height: 42px;
+   padding: 0 18px;
+
+   background-color: #159BC5;
+   color: white;
+   text-decoration: none;
+   border-radius: 8px;
+
+   font-size: 15px;
+   font-weight: bold;
+   transition: 0.3s;
+
+}
+
+.agendamento a:hover{
+   background-color: #08749F;
+}
+
+
+
+
+.formulario {
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    background-color: aliceblue;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.formulario h1 {
+    font-size: 28px;
+    color: #159BC5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+.formulario button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #feffff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #056487;
+} */
+
+
 
 .botao{
     display: inline-block;
@@ -106,6 +198,38 @@ nav a{
     text-decoration: none;
 
     border-radius: 5px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+#botao_fale_conosco a{
+    color: white;
+
+    text-decoration: none;
+}
+
+.container.historia{
+    
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #252525;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    margin: 15px;
+
 }
 
 /* cardapio */
@@ -113,9 +237,15 @@ nav a{
 .cardapio{
     padding: 70px 5%;
 
-    background-color: #171717;
+    background-color: #333333;
 
     text-align: center;
+}
+
+.banner a{
+    color: white;
+
+    text-decoration: none;
 }
 
 
@@ -171,7 +301,15 @@ nav a{
 
     text-align: center;
 
-    background-color: #E5D8C4;
+    background-color:   #171717;
+}
+
+.sobre p{
+    color: white;
+}
+
+.sobre h2{ 
+    color: white;
 }
 
 /* contato */
@@ -181,13 +319,58 @@ nav a{
 
     text-align: center;
 
-    background-color: #252525;
+    background-color: #E5D8C4;
 
     color: white;
 }
 
+.contato p, h2{
+    color: #171717;
+}
+
 .contato a{
-    color: #D99A32;
+    color: #9c650d;
+}
+
+.botao_fale_conosco{
+
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #252525;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    margin: 15px;
+}
+
+.mapa {
+
+    max-width: 1000px;
+   
+    margin: auto;
+   
+    border-radius: 15px;
+   
+    overflow: hidden;
+   
+    box-shadow: 5px 6px 22px rgba(0, 0, 0, 0.1);
+
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 400px;
 }
 
 /* footer */
