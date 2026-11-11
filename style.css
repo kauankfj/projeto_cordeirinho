@@ -186,6 +186,10 @@ nav a{
     color: white;
 }
 
+.contato a{
+    color: #D99A32;
+}
+
 /* footer */
 
 footer{
@@ -197,4 +201,5 @@ footer{
 
     color: white;
 }
+
 
