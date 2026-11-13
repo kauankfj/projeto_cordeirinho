@@ -16,7 +16,7 @@
         </div>
             <nav> <!--barra de navegação header-->
 
-                <a href="index.html">Iníciooooooo</a>
+                <a href="index.html">Início</a>
                 <a href="cardapio.html">Cardapio</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="contato.html">Contato</a>
@@ -26,17 +26,28 @@
 
     <!--BANNER-->
 
-    <section id="inicio" class="banner">
-        <div class="banner_conteudo">
+<section class="carrossel">
 
-            <h1>Uma experiencia única</h1>
-            <p>Descubra novos sabores.</p>
+    <button class="seta anterior" onclick="mudarSlide(-1)">
+        &#10094;
+    </button>
 
-            <a href="cardapio.html" class="botao_fale_conosco">
-                Conheça nosso cardápio
-            </a>
+    <div class="carrossel-container">
+
+        <div class="slides">
+            <img src="./img/bannerinicio.jpeg" alt="Prato 1">
+            <img src="./img/bannerinicio02.jpeg" alt="Prato 2">
+            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="prato 3">
         </div>
-    </section>
+
+    </div>
+
+    <button class="seta proximo" onclick="mudarSlide(1)">
+        &#10095;
+    </button>
+
+</section>
+
 
     <!-- Cardápio -->
 
@@ -58,35 +69,34 @@
 
     <!-- Sobre nós -->
 
-    
-     <section id="sobre" class="sobre">
-        <div class="container">
 
-            <h3>Desde 1958</h3>
+<section class="historia">
 
-            <h1>Nossa Historia</h1>
+    <div class="historia-fundo">
 
-            <p>Lorem</p>
-        </div>
-     </section>
+        <div class="historia-texto">
 
-     <!-- contato -->
-    <section id="contato" class="contato">
-        <h2>Onde nos encontar?</h2>
+            <span>DESDE 1958</span>
 
-        <div class="mapa">
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.010070988136!2d-46.69447402466975!3d-23.56808177879515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce570a827a067f%3A0x2717fdcc9eff435c!2sCordeirinho!5e0!3m2!1spt-BR!2sbr!4v1794399336809!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-             </div>
+            <h1>
+               Cordeirinho
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem possimus adipisci cum cumque natus ad quia, exercitationem consectetur vel corporis explicabo ullam dicta odit nostrum debitis eveniet eligendi dolorem error.
+            </p>
+
         </div>
 
-        <div id="botao_fale_conosco" class="botao_fale_conosco">
-            <a href="contato.html">Fale conosco</a>
-        </div>
+    </div>
 
-    </section>
+    <div class="historia-imagem">
+        <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="Chef preparando um prato">
+    </div>
 
-    <footer>
+</section>
+
+        <footer>
         <P>Todos os direitos reservados - © 2026 - CORDEIRINHO</P>
     </footer>
 </body>
