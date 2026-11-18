@@ -166,6 +166,20 @@ nav a{
     margin-bottom: 30px;
 }
 
+*/
+
+#foto_historia{
+    width: 400px;
+
+    height: 400px;
+
+    margin-top: -100px;
+
+    margin-left: 300px;
+
+    z-index: initial;
+}
+
 /* BOTÃO */
 .formulario button {
     width: 100%;
