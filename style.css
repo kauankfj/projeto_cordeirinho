@@ -53,32 +53,62 @@ nav a{
 
 /* banner */
 
-
 .carrossel {
     width: 100%;
-    max-width: 1000px;
-    margin: 50px auto;
-
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.carrossel-container {
-    width: 1000%;
+    height: 600px;
+    position: relative;
     overflow: hidden;
 }
 
 .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.slides img {
-    min-width: 100%;
-    height: 450px;
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.8;
+    visibility: hidden;
+
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
+
+
+.carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.anterior {
+    left: 15px;
+}
+
+.proximo {
+    right: 15px;
+}
+
 
 /* Botões */
 
@@ -167,7 +197,7 @@ nav a{
 .historia-fundo {
     width: 65%;
     height: 750px;
-    background-color: #373330;
+    background-color: #31261f;
 
     margin-left: 5%;
     position: relative;
@@ -219,24 +249,91 @@ nav a{
 }
 
 
-.container {
-    width: 550px;
-    max-width: 1000px;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 30px;
-    flex: 0 1 1000px;
-    background-color: #5c3c2773;
-    box-shadow: 0 3px 10px rgba(1, 19, 46, 0.08);
-    height: 450px;
-    margin-left: 200px;
+.pratos-destaques{
+
+    padding: 70px 8%;
+
+    background-color: #f5e8d5;
+
+    text-align: center;
+
 }
 
-.container h3{
-  margin-left: -400px;
-
-  color: #feffff;
+.titulo-pratos h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
 }
+
+.titulo-pratos p {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.container-pratos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-prato {
+    width: 400px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    transition: transform 0.3s ease;
+}
+
+.card-prato:hover {
+    transform: translateY(-8px);
+}
+
+.card-prato img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.info-prato {
+    padding: 20px;
+}
+
+.info-prato h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-prato p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.botao-cardapio {
+    margin-top: 40px;
+}
+
+.botao-cardapio a {
+    display: inline-block;
+    background-color: #d99a32;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.botao-cardapio a:hover {
+    background-color: #a77526;
+}
+
+.container{
+ margin-bottom: 10px;   
+}
+
+
 /* 
 .agendamento a{
 

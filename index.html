@@ -26,28 +26,29 @@
 
     <!--BANNER-->
 
+
 <section class="carrossel">
 
-    <button class="seta anterior" onclick="mudarSlide(-1)">
-        &#10094;
-    </button>
+    <div class="slides">
 
-    <div class="carrossel-container">
+        <div class="slide ativo">
+            <img src="./img/bannerinicio.jpeg" alt="Banner 1">
+        </div>
 
-        <div class="slides">
-            <img src="./img/bannerinicio.jpeg" alt="Prato 1">
-            <img src="./img/bannerinicio02.jpeg" alt="Prato 2">
-            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="prato 3">
+        <div class="slide">
+            <img src="./img/banner_meio.png" alt="Banner 2">
+        </div>
+
+        <div class="slide">
+            <img src="banner3.jpg" alt="Banner 3">
         </div>
 
     </div>
 
-    <button class="seta proximo" onclick="mudarSlide(1)">
-        &#10095;
-    </button>
+    <button class="anterior" onclick="mudarSlide(-1)">❮</button>
+    <button class="proximo" onclick="mudarSlide(1)">❯</button>
 
 </section>
-
 
     <!-- Cardápio -->
 
@@ -96,7 +97,51 @@
 
 </section>
 
-        <footer>
+<section class="pratos-destaques">
+    <div class="container">
+        <h2>Nossos destaques</h2>
+        <p>Conheça ualguns dos sabores que fazem parte da nossa historia</p>
+    </div>
+
+       <div class="container-pratos">
+
+        <div class="card-prato">
+            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="Prato especial">
+            <div class="info-prato">
+                <h3>Prato Especial</h3>
+                <p>Uma combinação deliciosa de ingredientes selecionados.</p>
+            </div>
+        </div>
+
+        <div class="card-prato">
+            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="Prato da casa">
+            <div class="info-prato">
+                <h3>Prato da Casa</h3>
+                <p>Uma experiência de sabor preparada especialmente para você.</p>
+            </div>
+        </div>
+
+        <div class="card-prato">
+            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="Especialidade">
+            <div class="info-prato">
+                <h3>Especialidade</h3>
+                <p>Ingredientes frescos e muito sabor em cada detalhe.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="botao-cardapio">
+        <a href="cardapio.html">Conheça nosso cardápio</a>
+    </div>
+
+</section>
+
+
+
+    <script src="./main.js"></script>
+
+       <footer>
         <P>Todos os direitos reservados - © 2026 - CORDEIRINHO</P>
     </footer>
 </body>
