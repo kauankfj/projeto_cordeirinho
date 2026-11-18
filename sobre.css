@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* cabeçalho */
+
+header{
+    width: 100%;
+    
+    padding: 20px 5%;
+
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: space-between;
+
+    background-color: #222222;
+    
+    color: white;
+
+    background-size: contain;
+
+}
+
+header img{
+    width: 85px;
+
+    margin-left: -80px;
+}
+
+nav{
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a{
+    color: white;
+
+    text-decoration: none;
+}
