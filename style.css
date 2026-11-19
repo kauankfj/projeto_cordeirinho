@@ -88,6 +88,10 @@ nav a{
     object-fit: cover;
 }
 
+.carrossel{
+   height: 1000px;
+}
+
 
 .carrossel button {
     position: absolute;
