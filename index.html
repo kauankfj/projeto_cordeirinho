@@ -36,12 +36,69 @@
         </div>
 
         <div class="slide">
-            <img src="./img/banner_meio.png" alt="Banner 2">
+            <img src="./img/bannerinicio03.jpeg" alt="Banner 2">
         </div>
 
         <div class="slide">
-            <img src="banner3.jpg" alt="Banner 3">
+            <img src="./img/bannerinicio02.jpeg" alt="Banner 3">
         </div>
+
+    <section class="container">
+         <div class="formulario">
+
+        <h1>BAZAR AUXILIADORA</h1>
+
+        <form id="atendimento">
+
+            <!-- CAMPO DE PREENCHIMENTO DE NOME -->
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <!-- CAMPO DE PREENCHIMENTO DE NUMERO -->
+            <div class="campo">
+                <label for="telefone">Whatsapp</label>
+                <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+            </div>
+
+            <!-- CAMPO DE SERVIÇOS -->
+            <div class="campo">
+                <label for="servicos">Escolha seu Serviço</label>
+
+                <select name="servicos" id="servicos" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="impressao">IMPRESSÃO</option>
+                    <option value="digitacao">DIGITAÇÃO</option>
+                    <option value="contrato">CONTRATOS</option>
+                    <option value="plastificacao">PLASTIFICAÇÃO</option>
+                </select>
+            </div>
+
+            <!-- CAMPO DE DATA -->
+            <div class="campo">
+                <label for="data">Data de atendimento</label>
+                <input type="date" id="data" required>
+            </div>
+
+            <!-- CAMPO DE HORARIO -->
+            <div class="campo">
+                <label for="horario">Horário de Atendimento</label>
+                <input type="time" id="horario" required>
+            </div>
+
+            <!-- OBSERVAÇÕES -->
+            <div class="campo">
+                <label for="mensagens">Deixe sua observação</label>
+                <textarea id="mensagens" placeholder="Digite sua observação"></textarea>
+            </div>
+
+            <button type="submit">SOLICITAR AGENDAMENTO</button>
+
+        </form>
+
+    </div>
+    </section>    
 
     </div>
 

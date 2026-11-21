@@ -88,6 +88,10 @@ nav a{
     object-fit: cover;
 }
 
+.carrossel{
+   height: 1000px;
+}
+
 
 .carrossel button {
     position: absolute;
@@ -184,7 +188,7 @@ nav a{
 .historia {
     width: 100%;
     min-height: 780px;
-    background-color: #f3f0e5;
+    background-color: #292724;
 
     display: flex;
     align-items: center;
@@ -652,12 +656,16 @@ nav a{
    
     overflow: hidden;
    
-    box-shadow: 5px 6px 22px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 12px 30px #171717;
 
 }
 
-.mapa h2{
-
+.container-mapa h2{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    max-width: 1000px;
     margin-top: 15px;
     margin-left: 350px;
 
