@@ -1,84 +1,423 @@
 *{
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
+/* ==================================================
+   17. PÁGINA CARDÁPIO
+================================================== */
 
-html{
-    scroll-behavior: smooth;
-}
 
-body{
-    font-family: Arial, sans-serif;
-}
 
-/* cabeçalho */
-
-header{
+header {
     width: 100%;
-    
-    padding: 20px 5%;
+    padding: 15px 5%;
 
     display: flex;
-    
     align-items: center;
-    
     justify-content: space-between;
 
     background-color: #222222;
-    
     color: white;
-
-    background-size: contain;
-
 }
 
-header img{
+header img {
     width: 85px;
-
-    margin-left: -80px;
+    height: auto;
+    display: block;
 }
 
-nav{
+nav {
     display: flex;
-
+    align-items: center;
     gap: 25px;
 }
 
-nav a{
+nav a {
     color: white;
-
     text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
-    
-.banner{
 
+nav a:hover {
+    color: #d99a32;
+}
+
+
+
+/* Banner principal */
+
+.banner-menu {
     width: 100%;
+    min-height: 350px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("./img/bannerinicio.jpeg");
 
     background-size: cover;
-    
-    min-height: 300px;
+    background-position: center;
 
     display: flex;
+    align-items: center;
+    justify-content: center;
 
-
-.banner h1{
-    font-size: 45px;
-
-    margin-bottom: 15px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.banner p{
-    margin-bottom: 25px;
-}
+.banner-menu-texto span {
+    color: #d99a32;
+    letter-spacing: 5px;
+    font-size: 14px;
 }
 
-.container{
+.banner-menu-texto h1 {
+    color: white;
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.banner-menu-texto p {
+    color: #eeeeee;
+    font-size: 17px;
+}
+
+
+/* Navegação das categorias */
+
+.categorias-menu {
+    background-color: #222222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+    flex-wrap: wrap;
+
+    padding: 22px 5%;
+}
+
+.categorias-menu a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.categorias-menu a:hover {
+    color: #d99a32;
+}
+
+
+/* Seções do cardápio */
+
+.secao-cardapio {
+    padding: 75px 8%;
+    background-color: #ffffff;
+
+    scroll-margin-top: 30px;
+}
+
+.fundo-bege {
     background-color: #f5e8d5;
 }
 
-img{
-    width: 150px;
+
+/* Títulos das categorias */
+
+.titulo-categoria {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-categoria span {
+    color: #c17e14;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.titulo-categoria h2 {
+    color: #302820;
+
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.titulo-categoria p {
+    color: #777777;
+    font-size: 16px;
 }
 
 
+/* Organização dos produtos */
+
+.grade-cardapio {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* Cards individuais */
+
+.produto-cardapio {
+    background-color: white;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.produto-cardapio:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+
+/* Imagens */
+
+.produto-cardapio img {
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Informações */
+
+.produto-info {
+    padding: 22px;
+}
+
+.produto-info h3 {
+    color: #302820;
+
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.produto-info p {
+    color: #777777;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    min-height: 45px;
+    margin-bottom: 18px;
+}
+
+.produto-info span {
+    color: #c17e14;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Final do cardápio */
+
+.final-cardapio {
+    background-color: #302820;
+
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.final-cardapio h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.final-cardapio p {
+    color: #dddddd;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.final-cardapio a {
+    display: inline-block;
+
+    background-color: #d99a32;
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.final-cardapio a:hover {
+    background-color: #a77526;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 1024px) {
+
+    .grade-cardapio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .banner-menu {
+        min-height: 280px;
+    }
+
+    .banner-menu-texto h1 {
+        font-size: 35px;
+    }
+
+    .categorias-menu {
+        gap: 20px;
+    }
+
+    .secao-cardapio {
+        padding: 50px 5%;
+    }
+
+    .grade-cardapio {
+        grid-template-columns: 1fr;
+    }
+
+    .produto-cardapio img {
+        height: 230px;
+    }
+
+    .titulo-categoria h2 {
+        font-size: 30px;
+    }
+
+}
+
+footer {
+    padding: 35px 5%;
+
+    text-align: center;
+
+    background-color: #171717;
+    color: white;
+
+    font-size: 14px;
+}
+
+
+.banner-formulario {
+    position: absolute;
+
+    top: 350%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 5;
+
+    width: 90%;
+    max-width: 380px;
+
+    padding: 30px;
+
+    background-color: rgba(34, 34, 34, 0.90);
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+
+    height: 300px;
+
+}
+
+.banner-formulario h2 {
+    color: white;
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.banner-formulario p {
+    color: #dddddd;
+    font-size: 14px;
+
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.banner-formulario form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.banner-formulario input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.banner-formulario input:focus {
+    box-shadow: 0 0 0 2px #d99a32;
+}
+
+.banner-formulario button {
+    padding: 14px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #d99a32;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 100px;
+    margin-left: 70px;
+
+}
+
+.banner-formulario button:hover {
+    background-color: #a77526;
+}

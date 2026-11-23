@@ -1,213 +1,271 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="imagem" href="./img/logo_cordeirinho.jpeg"> <!--icon logo na barra de pesquisa-->
-    <link rel="stylesheet" href="./style.css">    <!--link de style css-->
-    <title>Cordeirinho</title>
-    
+
+    <!-- Identidade visual -->
+    <link rel="icon" type="image/jpeg" href="./img/logo_cordeirinho.jpeg">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Cordeirinho | Restaurante</title>
 </head>
+
 <body>
-    <!-- cabeçario da página inicial -->
-    <header> <!--cabeçario da página-->
-        <div class="logo"> 
-            <img src="./img/logo_cordeirinho.jpeg" alt="imagem da logo cordeirinho">
+
+    <!-- ================= CABEÇALHO ================= -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html" aria-label="Página inicial do Cordeirinho">
+                <img src="./img/logo_cordeirinho.jpeg"
+                     alt="Logo do restaurante Cordeirinho">
+            </a>
         </div>
-            <nav> <!--barra de navegação header-->
 
-                <a href="index.html">Início</a>
-                <a href="cardapio.html">Cardapio</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="contato.html">Contato</a>
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="sobre.html">Sobre</a>
+            
+        </nav>
 
-            </nav>
     </header>
 
-    <!--BANNER-->
 
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
 
-<section class="carrossel">
+    <main>
 
-    <div class="slides">
+        <!-- BANNER / CARROSSEL -->
 
-        <div class="slide ativo">
-            <img src="./img/bannerinicio.jpeg" alt="Banner 1">
-        </div>
+        <section class="carrossel" aria-label="Destaques do restaurante">
 
-        <div class="slide">
-            <img src="./img/bannerinicio03.jpeg" alt="Banner 2">
-        </div>
+            <div class="slides">
 
-        <div class="slide">
-            <img src="./img/bannerinicio02.jpeg" alt="Banner 3">
-        </div>
+                <div class="slide ativo">
+                    <img src="./img/bannerinicio.jpeg" alt="Banner principal do Cordeirinho">
+                </div>
 
-    <section class="container">
-         <div class="formulario">
+                <div class="slide">
+                    <img src="./img/bannerinicio03.jpeg" alt="Banner de apresentação">
+                </div>
 
-        <h1>BAZAR AUXILIADORA</h1>
+                <div class="slide">
+                    <img src="./img/bannerinicio02.jpeg" alt="Banner promocional">
+                </div>
+                
 
-        <form id="atendimento">
-
-            <!-- CAMPO DE PREENCHIMENTO DE NOME -->
-            <div class="campo">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
             </div>
 
-            <!-- CAMPO DE PREENCHIMENTO DE NUMERO -->
-            <div class="campo">
-                <label for="telefone">Whatsapp</label>
-                <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+
+<div class="banner-formulario">
+
+    <h2>Faça sua Reserva!</h2>
+
+    <p>Deixe seus dados e fale conosco pelo WhatsApp.</p>
+
+    <form id="formWhatsApp">
+
+        <input 
+            type="text" 
+            id="nome" 
+            placeholder="Seu nome"
+            required
+        >
+
+        <input 
+            type="email" 
+            id="email" 
+            placeholder="Seu e-mail"
+            required
+        >
+
+        <button type="submit">
+            Falar pelo WhatsApp
+        </button>
+
+    </form>
+
+</div>
+
+
+            <button class="anterior"
+                    onclick="mudarSlide(-1)"
+                    aria-label="Slide anterior">
+                &#10094;
+            </button>
+
+            <button class="proximo"
+                    onclick="mudarSlide(1)"
+                    aria-label="Próximo slide">
+                &#10095;
+            </button>
+
+        </section>
+
+
+        <!-- HISTÓRIA DO RESTAURANTE -->
+
+        <section class="historia" id="historia">
+
+            <div class="historia-fundo">
+
+                <div class="historia-texto">
+
+                    <span>DESDE 1958</span>
+
+                    <h1>Cordeirinho</h1>
+
+                 
+
+                </div>
+
             </div>
 
-            <!-- CAMPO DE SERVIÇOS -->
-            <div class="campo">
-                <label for="servicos">Escolha seu Serviço</label>
+            <div class="historia-imagem">
 
-                <select name="servicos" id="servicos" required>
-                    <option value="">Selecione uma opção</option>
-                    <option value="impressao">IMPRESSÃO</option>
-                    <option value="digitacao">DIGITAÇÃO</option>
-                    <option value="contrato">CONTRATOS</option>
-                    <option value="plastificacao">PLASTIFICAÇÃO</option>
-                </select>
+                <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg"
+                     alt="Fachada do restaurante Cordeirinho"
+                     loading="lazy">
+
             </div>
 
-            <!-- CAMPO DE DATA -->
-            <div class="campo">
-                <label for="data">Data de atendimento</label>
-                <input type="date" id="data" required>
-            </div>
+        </section>
 
-            <!-- CAMPO DE HORARIO -->
-            <div class="campo">
-                <label for="horario">Horário de Atendimento</label>
-                <input type="time" id="horario" required>
-            </div>
 
-            <!-- OBSERVAÇÕES -->
-            <div class="campo">
-                <label for="mensagens">Deixe sua observação</label>
-                <textarea id="mensagens" placeholder="Digite sua observação"></textarea>
-            </div>
+        <!-- PRATOS EM DESTAQUE -->
 
-            <button type="submit">SOLICITAR AGENDAMENTO</button>
+        <section class="pratos-destaques" id="destaques">
 
-        </form>
+            <div class="container">
 
-    </div>
-    </section>    
+                <h2>Nossos destaques</h2>
 
-    </div>
-
-    <button class="anterior" onclick="mudarSlide(-1)">❮</button>
-    <button class="proximo" onclick="mudarSlide(1)">❯</button>
-
-</section>
-
-    <!-- Cardápio -->
-
-    <!--<section id="cardapio" class="cardapio">
-       <section>
-        <h1>CORDEIRINHO</h1>
-
-       <form id="atendimento">
-        <div class="campo">
-
-            <label for="horario">Horario de Atendimento</label>
-
-            <input type="time" id="horario" required>
-
-        </div>
-       </form>
-       </section>
-    </section>-->
-
-    <!-- Sobre nós -->
-
-    <section class="historia">
-
-        <div class="historia-fundo">
-            <div class="historia-texto">
-    
-                <span>DESDE 1958</span>
-    
-                <h1>
-                   Cordeirinho
-                </h1>
-    
                 <p>
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe culpa assumenda optio, enim consequatur iste tempore nesciunt illum perferendis voluptates totam odio id tenetur autem est corporis vitae reiciendis debitis!
+                    Conheça alguns dos sabores que fazem parte
+                    da nossa história.
                 </p>
-    
+
             </div>
-        </div>
-    
-        <div class="historia-imagem">
-            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg"
-                 alt="frente da cordeirinho">
-        </div>
-    
-    </section>
 
-<section class="pratos-destaques">
-    <div class="container">
-        <h2>Nossos destaques</h2>
-        <p>Conheça ualguns dos sabores que fazem parte da nossa historia</p>
-    </div>
 
-       <div class="container-pratos">
+            <!-- Cards dos pratos -->
 
-        <div class="card-prato">
-            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="Prato especial">
-            <div class="info-prato">
-                <h3>Prato Especial</h3>
-                <p>Uma combinação deliciosa de ingredientes selecionados.</p>
+            <div class="container-pratos">
+
+                <article class="card-prato">
+
+                    <img src="./img/prato-macarrao.jpg"
+                         alt="Prato especial do restaurante"
+                         loading="lazy">
+
+                    <div class="info-prato">
+
+                        <h3>Prato Especial</h3>
+
+                        <p>
+                            Uma combinação deliciosa de ingredientes selecionados.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-prato">
+
+                    <img src="./img/prato file mignom.jpg"
+                         alt="Prato da casa"
+                         loading="lazy">
+
+                    <div class="info-prato">
+
+                        <h3>Prato da Casa</h3>
+
+                        <p>
+                            Uma experiência de sabor preparada especialmente para você.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-prato">
+
+                    <img src="./img/prato-feijoada.jpg"
+                         alt="Especialidade do restaurante"
+                         loading="lazy">
+
+                    <div class="info-prato">
+
+                        <h3>Especialidade</h3>
+
+                        <p>
+                            Ingredientes frescos e muito sabor em cada detalhe.
+                        </p>
+
+                    </div>
+
+                </article>
+
             </div>
-        </div>
 
-        <div class="card-prato">
-            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="Prato da casa">
-            <div class="info-prato">
-                <h3>Prato da Casa</h3>
-                <p>Uma experiência de sabor preparada especialmente para você.</p>
+
+            <!-- Botão para o cardápio -->
+
+            <div class="botao-cardapio">
+
+                <a href="cardapio.html">
+                    Conheça nosso cardápio
+                </a>
+
             </div>
-        </div>
 
-        <div class="card-prato">
-            <img src="./img/WhatsApp Image 2026-11-12 at 08.37.31.jpeg" alt="Especialidade">
-            <div class="info-prato">
-                <h3>Especialidade</h3>
-                <p>Ingredientes frescos e muito sabor em cada detalhe.</p>
+        </section>
+
+
+        <!-- LOCALIZAÇÃO -->
+
+        <div class="container-mapa" id="localizacao">
+
+            <div class="mapa">
+
+                <h2>Onde nos encontrar?</h2>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.010070988136!2d-46.69447402466975!3d-23.56808177879515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce570a827a067f%3A0x2717fdcc9eff435c!2sCordeirinho!5e0!3m2!1spt-BR!2sbr!4v1795001915407!5m2!1spt-BR!2sbr"
+                    title="Localização do restaurante Cordeirinho no Google Maps"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
             </div>
+
         </div>
 
-    </div>
-
-    <div class="botao-cardapio">
-        <a href="cardapio.html">Conheça nosso cardápio</a>
-    </div>
-
-</section>
-
-<section class="container-mapa">
-   
-    
-<div class="mapa">
-    <h2>Onde nos encontrar?</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.010070988136!2d-46.69447402466975!3d-23.56808177879515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce570a827a067f%3A0x2717fdcc9eff435c!2sCordeirinho!5e0!3m2!1spt-BR!2sbr!4v1795001915407!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
- </div>
-
-</section>
+    </main>
 
 
-    <script src="./main.js"></script>
+    <!-- ================= RODAPÉ ================= -->
 
-       <footer>
-        <P>Todos os direitos reservados - © 2026 - CORDEIRINHO</P>
+    <footer>
+
+        <p>
+            Todos os direitos reservados - © 2026 - CORDEIRINHO
+        </p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./main.js" defer></script>
+
 </body>
 </html>
